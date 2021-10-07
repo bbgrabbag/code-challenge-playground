@@ -1,5 +1,6 @@
 const { testCases } = require("./test-cases");
 const functions = require("./main");
+const { setMainDescriber, setMainRunner } = require("./utils");
 
 const testCaseKeys = Object.keys(testCases);
 const functionKeys = Object.keys(functions);
@@ -12,16 +13,10 @@ try {
   for (const k of functionKeys) {
     if (!testCaseKeys.includes(k))
       throw Error(`No test case found for function '${k}()'`);
-    const describer =
-      global.testSingleChallenge === k
-        ? fdescribe
-        : describe;
+    const describer = setMainDescriber(k);
     describer(`Unit testing function '${k}()'`, () => {
       testCases[k].forEach(([inputs, expected], i) => {
-        const runner =
-        global.testSingleChallenge === k && global.testSingleTestCase === i
-            ? fit
-            : it;
+        const runner = setMainRunner(k, i);
         runner(`Should output correct value for test case '${i}'`, () => {
           expect(functions[k](...inputs)).toEqual(expected);
         });

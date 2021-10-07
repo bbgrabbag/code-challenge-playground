@@ -41,7 +41,7 @@ module.exports = {
 // jest.config.js
 module.exports = {
     globals: {
-        testSingleChallenge: "example"
+        testSingleChallenge: "add_func"
     },
     //...
 }
@@ -53,14 +53,19 @@ module.exports = {
 // jest.config.js
 module.exports = {
     globals: {
-        testSingleChallenge: "example",
+        testSingleChallenge: "add_func",
         testSingleTestCase: 0
     },
     // ...
 }
 ```
 
-### [Changelog](./changelog.md)
+### Custom Tests
+- The default workflow in `main.test.js` may not work for some scenarios, so custom tests can be added to `custom.test.js`.
+- By default custom tests are switched off. To enable them, set the property `globals.skipCustomTests` within `jest.config.js` to `false`.
+- To run only custom tests, set the property `globals.runCustomTestsOnly` within `jest.config.js` to `true`. This will override the other settings.
 
 ### Author
 - Reach out to [Ben Turner](bbgrabbag@gmail.com) for any questions, bugs, or contribution requests.
+
+### [Changelog](./changelog.md)

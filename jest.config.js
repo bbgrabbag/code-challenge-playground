@@ -4,21 +4,29 @@
  */
 
 module.exports = {
-  // A set of global variables that need to be available in all test environments
   globals: {
-    // If defined, jest will only run tests on the function exported from this file (omit file extension) as defined in the directory '/challenges':
-
+    /*  
+    If defined, jest will only run tests on the function exported from this file (omit file extension) as defined in the directory '/challenges': 
+    */
     // testSingleChallenge: 'example',
 
-    // If defined, jest will only run test on the specified test case index. Will do nothing if the above property 'testSingleChallenge' is not also defined.
+    /* 
+    If defined, jest will only run test on the specified test case index. Will do nothing if 'testSingleChallenge' is not also defined.
+    */
+    // testSingleTestCase: 0,
 
-    // testSingleTestCase: 0
+    /*
+    If set to 'true', only custom tests will run:
+    */
+    runCustomTestsOnly: false,
+
+    /*
+    If set to 'true', custom tests will not run. Will do nothing if 'runCustomTestsOnly' is set to 'true'
+    */
+    skipCustomTests: true
   },
 
-  // Automatically clear mock calls and instances between every test
   clearMocks: true,
-
-  // Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
-
+  verbose: true,
 };

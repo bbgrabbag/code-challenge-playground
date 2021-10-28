@@ -7,6 +7,10 @@
     "test": "jest",
     "lint": "eslint"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbgrabbag/code-challenge-playground"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

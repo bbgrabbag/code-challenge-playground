@@ -17,7 +17,7 @@ try {
     describer(`Unit testing function '${k}()'`, () => {
       testCases[k].forEach(([inputs, expected], i) => {
         const runner = setMainRunner(k, i);
-        runner(`Should output correct value for test case '${i}'`, () => {
+        runner(`Should output correct value for test case '${k}'`, () => {
           expect(functions[k](...inputs)).toEqual(expected);
         });
       });

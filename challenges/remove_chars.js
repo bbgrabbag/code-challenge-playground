@@ -2,11 +2,11 @@
  * 
  * @param {String} str
  * @param {String} char
- * @description - remove all each isntance of given character from a string
+ * @description - remove all instances of given character from a string
  * @returns {String}
  * 
- * @example - charCount('abc', 'a') // --> 'bc'
- * @example - charCount('aaaa', 'a') // --> ''
+ * @example - removeChar('abc', 'a') // --> 'bc'
+ * @example - removeChar('aaaa', 'a') // --> ''
  */
 
  const removeChar = (str, char) => {

@@ -8,7 +8,7 @@ module.exports = {
     /*  
     If defined, jest will only run tests on the function exported from this file (omit file extension) as defined in the directory '/challenges': 
     */
-    // testSingleChallenge: 'example',
+    testSingleChallenge: 'char_count',
 
     /* 
     If defined, jest will only run test on the specified test case index. Will do nothing if 'testSingleChallenge' is not also defined.

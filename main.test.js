@@ -18,7 +18,7 @@ try {
       testCases[k].forEach(([inputs, expected], i) => {
         const runner = setMainRunner(k, i);
         runner(`Should output correct value for test case '${k}'`, () => {
-          expect(functions[k](...inputs)).toEqual(expected);
+          expect(functions[k](...inputs)).toStrictEqual(expected);
         });
       });
     });

@@ -9,8 +9,8 @@
  * @example - removeChar('aaaa', 'a') // --> ''
  */
 
- const removeChar = (str, char) => {
-    
+const removeChar = (str, char) => {
+
 }
 
 module.exports = removeChar;

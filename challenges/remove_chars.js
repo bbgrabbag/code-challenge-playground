@@ -10,7 +10,13 @@
  */
 
 const removeChar = (str, char) => {
+    let output = '';
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == char) continue;
+        output += str[i];
+    }
 
+    return output;
 }
 
 module.exports = removeChar;

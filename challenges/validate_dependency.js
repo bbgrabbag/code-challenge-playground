@@ -1,5 +1,5 @@
 /**
- * @param {Array<[string, string]>} - array of tuples representing a dependency between two things represented as strings (i.e.  ['A', 'B'] where B depends on A)
+ * @param {[String, String][]} dependencies - array of tuples representing a dependency between two things represented as strings (i.e.  ['A', 'B'] where B depends on A)
  * @description - determine whether the list of tuples creates a valid dependency tree (no circular deps)
  * @returns {Boolean}
  * 
@@ -8,7 +8,27 @@
  */
 
 const validateDependencies = (deps) => {
+    const graph = deps.reduce((output, [key, dep]) => {
+        if (key == dep) throw `${key} is a dependency of itself`;
+        return {
+            ...output,
+            [key]: output[key] ? [...output[key], dep] : [dep]
+        };
+    }, {})
 
+    const search = (k, children) => {
+        if (!children) return false;
+        for (const child of children) {
+            if (child == k || search(k, graph[child])) return true;
+        }
+        return false;
+    }
+
+    for (const k in graph) {
+        if (search(k, graph[k])) return false;
+    }
+
+    return true;
 }
 
 module.exports = validateDependencies;

@@ -57,5 +57,12 @@ module.exports.testCases = {
             ],
             false
         ],
+    ],
+    valid_brackets: [
+        [[''], true],
+        [['[]'], true],
+        [['[[[]'], false],
+        [[']]]'], false],
+        [['[[][][[]]]'], true],
     ]
 }

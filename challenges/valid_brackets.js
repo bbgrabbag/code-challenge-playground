@@ -6,8 +6,8 @@
  * @returns {Boolean}
  * 
  * @example - validBrackets('[[[') // --> false
- * @example - validBrackets([]) // --> true
- * @example - validBrackets([[][]][]) // --> true
+ * @example - validBrackets('[]') // --> true
+ * @example - validBrackets('[[][]][]') // --> true
  */
 
 const validBrackets = (str) => {

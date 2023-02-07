@@ -17,7 +17,7 @@ try {
     describer(`Unit testing function '${k}()'`, () => {
       testCases[k].forEach(([inputs, expected], i) => {
         const runner = setMainRunner(k, i);
-        runner(`Should output correct value for test case '${k}'`, () => {
+        runner(`\nTest case #${i + 1}: Should output correct value with parameters: \n${JSON.stringify(inputs)}`, () => {
           expect(functions[k](...inputs)).toStrictEqual(expected);
         });
       });

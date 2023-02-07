@@ -1,8 +1,9 @@
 /**
+ * @description - remove all instances of given character from a string
+ * @difficulty - 3/5
  * 
  * @param {String} str
  * @param {String} char
- * @description - remove all instances of given character from a string
  * @returns {String}
  * 
  * @example - removeChar('abc', 'a') // --> 'bc'

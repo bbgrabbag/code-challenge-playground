@@ -1,7 +1,8 @@
 /**
+ * @description - determine whether given string has valid placement of brackets
+ * @difficulty = 4/5
  * 
  * @param {String} str
- * @description - determine whether given string has valid placement of brackets
  * @returns {Boolean}
  * 
  * @example - validBrackets('[[[') // --> false

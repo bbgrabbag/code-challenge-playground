@@ -2,7 +2,7 @@
  * @description - determine whether the array contains numbers
  * @difficulty - 1/5
  * 
- * @param {Array<any[]>} - array of values
+ * @param {Array} - array of values
  * @returns {Boolean}
  * 
  * @example - checkForNumbers(['a','b', 2, {}]) // --> true

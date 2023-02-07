@@ -1,8 +1,9 @@
 /**
+ * @description - create a n X n array matrix containing a given character at each slot
+ * @difficulty - 2/5
  * 
  * @param {Number} n - integer > 0
  * @param {String} char
- * @description - create an n X n array matrix containing a given character at each slot
  * @returns {Array<String[]>} - 2d array matrix
  * 
  * @example - buildGrid(1, 'x') // --> [['x']]

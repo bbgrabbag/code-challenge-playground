@@ -1,8 +1,9 @@
 /**
+ * @description - calculate the number of times a given character appears in a given string
+ * @difficulty - 2/5
  * 
  * @param {String} str
  * @param {String} char
- * @description - calculate the number of times 'char' appears in 'str'
  * @returns {Number}
  * 
  * @example - charCount('abc', 'z') // --> 0

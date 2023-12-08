@@ -8,6 +8,8 @@
 - `npm install`
 - `npm run test`
 - In VS Code, you can run the debugger using the Jest configuration called `Unit Test` listed in `.vscode/launch.json` file. Hotkey is F5. This will automatically read the `jest.config.js` file
+- Run `git checkout interview-prep` to try your hand at an existing set of challenges.
+- If you get stuck, solutions can be found by running `git checkout solutions`
 
 ### Creating Custom Challenges
 - Within `/challenges` directory, create a file which contains a default export of the function you wish to test. For example:

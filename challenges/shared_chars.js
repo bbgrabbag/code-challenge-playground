@@ -14,7 +14,16 @@
  */
 
 const sharedChars = (arr) => {
-    
+    if (!arr.length) return '';
+
+    let shared = [];
+    for (let i = 0; i < arr[0].length; i++) {
+        const char = arr[0][i]
+        if (arr.every(str => str.includes(char)) && shared.indexOf(char) < 0)
+            shared.push(char)
+    }
+
+    return shared.sort().join('')
 }
 
 module.exports = sharedChars;

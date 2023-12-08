@@ -13,7 +13,7 @@
  */
 
 const smallestInt = (arr) => {
-
+    return arr.reduce((smallest, x) => x < smallest ? x : smallest)
 }
 
 module.exports = smallestInt;

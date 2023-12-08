@@ -31,13 +31,15 @@ module.exports.testCases = {
         [[['aaa', 'aab', 'aac']], 'a'],
         [[['abc', 'xyz']], ''],
         [[['ab', 'bc', 'cd']], ''],
-        [[['abc', 'abc', 'abc']], 'abc'],
-        [[['daebfc', 'xyzcba', 'gahbic']], 'abc'],
+        [[['acb', 'cba', 'bca']], 'abc'],
+        [[['dbecfa', 'xyzcba', 'gahbic']], 'abc'],
     ],
     smallest_integer: [
         [[[0]], 0],
         [[[5, 4, 3, 2, 1, 0]], 0],
         [[[10, 9, 8, 7, -5, -4, -3, -2, 1]], -5],
+        [[Array(100).fill(null).map((_, i) => 100 - i)], 1],
+        [[Array(100).fill(null).map((_, i) => i - 100)], -100]
     ],
     valid_brackets: [
         [[''], true],

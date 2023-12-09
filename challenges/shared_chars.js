@@ -6,9 +6,9 @@
  * @param {Array<String>} arr
  * @returns {String}
  * 
- * @example - sharedChars(['abc','bcd','cde']) // --> 'c'
- * @example - sharedChars(['aaa','bbb','ccc']) // --> ''
- * @example - sharedChars(['xxx','xxx','xxx']) // --> 'x'
+ * @example - sharedChars(['abcd','bcde','cdef']) // --> 'cd'
+ * @example - sharedChars(['aaa','bbb','ccc','ddd']) // --> ''
+ * @example - sharedChars(['xx','xx','xx','xx','xx']) // --> 'x'
  * @example - sharedChars([]) // --> ''
 
  */

@@ -9,11 +9,8 @@
  * @example - checkForNumbers(['a','b','c', {}]) // --> false (array contains no numbers)
  */
 
- const checkForNumbers = (arr) => {
-    for(let i = 0; i < arr.length; i++){
-        if(typeof arr[i] == 'number') return true;
-    }
-    return false
+const checkForNumbers = (arr) => {
+
 }
 
 module.exports = checkForNumbers;

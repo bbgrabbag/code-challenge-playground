@@ -11,7 +11,7 @@
  */
 
 const buildGrid = (n, char) => {
-
+    return Array.from(Array(n).fill(Array.from(Array(n).fill(char))))
 }
 
 module.exports = buildGrid;
